@@ -1,5 +1,6 @@
 import { makeClassName } from "@/utils/utils";
 import { TransitionLink } from "@/utils/TransitionLink";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
@@ -32,7 +33,7 @@ export default function Navbar() {
             href={"/"}
             className={makeClassName("flex", "text-lg", "font-bold", "navbar")}
           >
-            JMWD
+            <Image src="/images/PGLogo.png" alt="Logo" width={35} height={35} />
           </TransitionLink>
         </div>
         <div className={makeClassName("flex", "items-center", "gap-8")}>
@@ -40,25 +41,25 @@ export default function Navbar() {
             href={"/pages/blog"}
             className={makeClassName("text-lg", "font-bold", "navbar")}
           >
-            Blog
+            About Us
           </TransitionLink>
           <TransitionLink
             href={"/pages/projects"}
             className={makeClassName("text-lg", "font-bold", "navbar")}
           >
-            Projects
+            Ministries
           </TransitionLink>
           <TransitionLink
             href={"/pages/about"}
             className={makeClassName("text-lg", "font-bold", "navbar")}
           >
-            About
+            Give
           </TransitionLink>
           <TransitionLink
             href={"/pages/contact"}
             className={makeClassName("text-lg", "font-bold", "navbar")}
           >
-            Contact
+            Visit Us
           </TransitionLink>
         </div>
       </div>
