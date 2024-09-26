@@ -1,3 +1,4 @@
+import { off } from "process";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -11,6 +12,9 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        offwhite: "var(--offwhite)",
+        offwhiteBackground: "var(--offwhite-background)",
       },
     },
   },
