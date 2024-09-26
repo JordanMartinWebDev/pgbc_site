@@ -20,6 +20,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.page-transition {
+  opacity: 0;
+  transform: translateY(2.5rem);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
